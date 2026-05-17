@@ -46,7 +46,7 @@ function App() {
     e.preventDefault();
     const user = mockUsers[email.toLowerCase().trim()];
 
-    if (user && user.pass === password) {
+    if (user && user.pass === passwordd) {
       axios.get(`${API_BASE_URL}/api/parent/${user.code}`)
         .then(res => {
           setChildData(res.data);
