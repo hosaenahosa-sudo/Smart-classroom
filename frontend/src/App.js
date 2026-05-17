@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 // DYNAMIC BACKEND URL: Uses live Render URL when deployed, defaults to localhost for Termux testing
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000"
+const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 // CUSTOM REUSABLE BLACK CAT SVG LOGO COMPONENT
 const BlackCatLogo = ({ size = 60 }) => (
