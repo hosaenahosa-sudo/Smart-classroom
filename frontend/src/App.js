@@ -19,7 +19,7 @@ const BlackCatLogo = ({ size = 60 }) => (
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [email, setEmail] = useState('');
-  const [passwordd, setPasswordd] = useState('');
+  const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
   const [notifications, setNotifications] = useState([]);
   const [message, setMessage] = useState('');
@@ -108,7 +108,7 @@ function App() {
                 type="password" 
                 placeholder="••••••••" 
                 value={password}
-                onChange={(e) => setPasswordd(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
                 required
                 style={{ width: '100%', padding: '12px', boxSizing: 'border-box', borderRadius: '8px', border: '2px solid #e0e0e0', fontSize: '15px', outline: 'none' }}
               />
