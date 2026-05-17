@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable no-unused-vars */
+ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
